@@ -1,0 +1,144 @@
+[debug] [2024-05-11T20:34:18.144Z] ----------------------------------------------------------------------
+[debug] [2024-05-11T20:34:18.148Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Louis Olivier\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-11T20:34:18.148Z] CLI Version:   13.8.3
+[debug] [2024-05-11T20:34:18.149Z] Platform:      win32
+[debug] [2024-05-11T20:34:18.149Z] Node Version:  v21.7.3
+[debug] [2024-05-11T20:34:18.149Z] Time:          Sat May 11 2024 22:34:18 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2024-05-11T20:34:18.149Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-11T20:34:18.159Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-11T20:34:18.160Z] > authorizing via signed-in user (louiscyrano@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  J:\WEB DEV\Full Stack E-Commerce + Dashboard _ CMS_ Next.js 13 App Router, React, Tailwind, Prisma, MySQL, 2023\big-e-commerce\multi-store\multi-store\e-commerce-admin
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-11T20:34:31.905Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-05-11T20:34:32.355Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-05-11T20:34:32.355Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project big-ecommerce-food-admin (big-ecommerce-food-admin) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-05-11T20:34:35.405Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-05-11T20:34:35.405Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/big-ecommerce-food-admin
+[debug] [2024-05-11T20:34:36.221Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/firebasedatabase.googleapis.com 200
+[debug] [2024-05-11T20:34:36.222Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-05-11T20:34:36.223Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/big-ecommerce-food-admin/locations/-/instances/big-ecommerce-food-admin-default-rtdb [none]
+[debug] [2024-05-11T20:34:36.988Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/big-ecommerce-food-admin/locations/-/instances/big-ecommerce-food-admin-default-rtdb 200
+[debug] [2024-05-11T20:34:36.988Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/big-ecommerce-food-admin/locations/-/instances/big-ecommerce-food-admin-default-rtdb {"name":"projects/728634660105/locations/europe-west1/instances/big-ecommerce-food-admin-default-rtdb","project":"projects/728634660105","databaseUrl":"https://big-ecommerce-food-admin-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-05-11T20:34:41.526Z] >>> [apiv2][query] GET https://big-ecommerce-food-admin-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2024-05-11T20:34:41.630Z] <<< [apiv2][status] GET https://big-ecommerce-food-admin-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-05-11T20:34:41.630Z] <<< [apiv2][body] GET https://big-ecommerce-food-admin-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for big-ecommerce-food-admin-default-rtdb have been written to y. 
+[info] Future modifications to y will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-05-11T20:34:41.634Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/firestore.googleapis.com [none]
+[debug] [2024-05-11T20:34:41.634Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/firestore.googleapis.com x-goog-quota-user=projects/big-ecommerce-food-admin
+[debug] [2024-05-11T20:34:42.438Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/firestore.googleapis.com 200
+[debug] [2024-05-11T20:34:42.438Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/firestore.googleapis.com [omitted]
+[debug] [2024-05-11T20:34:42.439Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/big-ecommerce-food-admin/databases/(default) [none]
+[debug] [2024-05-11T20:34:42.616Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/big-ecommerce-food-admin/databases/(default) 200
+[debug] [2024-05-11T20:34:42.616Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/big-ecommerce-food-admin/databases/(default) {"name":"projects/big-ecommerce-food-admin/databases/(default)","uid":"4572ee02-9bc1-4ea1-8421-4df3725bfa52","createTime":"2024-05-11T19:15:23.193221Z","updateTime":"2024-05-11T19:15:23.193221Z","locationId":"europe-west6","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-05-11T19:34:41.662661Z","appEngineIntegrationMode":"ENABLED","keyPrefix":"o","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IJbmzqe5hoYDMKCv8Pu4hoYD"}
+[debug] [2024-05-11T20:34:42.617Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-05-11T20:34:42.617Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-11T20:34:42.617Z] > authorizing via signed-in user (louiscyrano@gmail.com)
+[debug] [2024-05-11T20:34:42.617Z] [iam] checking project big-ecommerce-food-admin for permissions ["firebase.projects.get"]
+[debug] [2024-05-11T20:34:42.618Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions [none]
+[debug] [2024-05-11T20:34:42.618Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions x-goog-quota-user=projects/big-ecommerce-food-admin
+[debug] [2024-05-11T20:34:42.618Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-11T20:34:43.236Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions 200
+[debug] [2024-05-11T20:34:43.236Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-05-11T20:34:54.093Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/big-ecommerce-food-admin/releases pageSize=10&pageToken=
+[debug] [2024-05-11T20:34:54.788Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/big-ecommerce-food-admin/releases 200
+[debug] [2024-05-11T20:34:54.788Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/big-ecommerce-food-admin/releases {"releases":[{"name":"projects/big-ecommerce-food-admin/releases/firebase.storage/big-ecommerce-food-admin.appspot.com","rulesetName":"projects/big-ecommerce-food-admin/rulesets/297e225e-9090-4776-b725-9661064e5bc5","createTime":"2024-05-11T19:15:39.446065Z","updateTime":"2024-05-11T19:15:39.446065Z"}]}
+[debug] [2024-05-11T20:34:54.789Z] No rulesets found, using default.
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-05-11T20:35:00.461Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/big-ecommerce-food-admin/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-05-11T20:35:00.464Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/big-ecommerce-food-admin/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-05-11T20:35:00.651Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/big-ecommerce-food-admin/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-05-11T20:35:00.651Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/big-ecommerce-food-admin/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-05-11T20:35:00.773Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/big-ecommerce-food-admin/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-05-11T20:35:00.773Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/big-ecommerce-food-admin/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/big-ecommerce-food-admin/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-05-11T20:35:00.775Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-11T20:35:00.775Z] > authorizing via signed-in user (louiscyrano@gmail.com)
+[debug] [2024-05-11T20:35:00.775Z] [iam] checking project big-ecommerce-food-admin for permissions ["firebase.projects.get"]
+[debug] [2024-05-11T20:35:00.775Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions [none]
+[debug] [2024-05-11T20:35:00.775Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions x-goog-quota-user=projects/big-ecommerce-food-admin
+[debug] [2024-05-11T20:35:00.775Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-11T20:35:01.386Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions 200
+[debug] [2024-05-11T20:35:01.386Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/big-ecommerce-food-admin:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-11T20:35:01.386Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-05-11T20:35:01.386Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/big-ecommerce-food-admin
+[debug] [2024-05-11T20:35:01.388Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-05-11T20:35:01.388Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/big-ecommerce-food-admin
+[debug] [2024-05-11T20:35:02.218Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/runtimeconfig.googleapis.com 200
+[debug] [2024-05-11T20:35:02.218Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-05-11T20:35:02.221Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com 200
+[debug] [2024-05-11T20:35:02.221Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-05-11T20:35:02.222Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-05-11T20:35:02.222Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/big-ecommerce-food-admin
+[debug] [2024-05-11T20:35:03.567Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-05-11T20:35:03.567Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-05-11T20:35:13.572Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-05-11T20:35:13.572Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/big-ecommerce-food-admin
+[debug] [2024-05-11T20:35:14.393Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com 200
+[debug] [2024-05-11T20:35:14.393Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/big-ecommerce-food-admin/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-05-11T20:37:22.973Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/big-ecommerce-food-admin [none]
+[debug] [2024-05-11T20:37:23.189Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/big-ecommerce-food-admin 200
+[debug] [2024-05-11T20:37:23.189Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/big-ecommerce-food-admin {"projectId":"big-ecommerce-food-admin","projectNumber":"728634660105","displayName":"big-ecommerce-food-admin","name":"projects/big-ecommerce-food-admin","resources":{"hostingSite":"big-ecommerce-food-admin","realtimeDatabaseInstance":"big-ecommerce-food-admin-default-rtdb","storageBucket":"big-ecommerce-food-admin.appspot.com","locationId":"europe-west6"},"state":"ACTIVE","etag":"1_89252f05-5198-4560-ab14-28586b1b96e9"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
